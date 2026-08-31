@@ -7,8 +7,9 @@
 
 ## 怎么选的
 
-**影响力 = 已兑现的引用量 + 尚未兑现的业界关注度。** 两个轴分开看，因为它们经常不一致：
-HunyuanVideo 有 1614 次引用但只有 12 个 upvote，Kandinsky 5.0 有 236 个 upvote 却只有 9 次引用。
+**影响力 = 已兑现的引用量 + 尚未兑现的业界关注度。** 两个轴分开列、不合成单一分数，
+因为它们经常打架：HunyuanVideo 有 1614 次引用但只有 12 个 upvote；CausVid 只有 3 个 upvote，
+却是整个 Forcing 家族的根。
 
 | 轴 | 数据源 | 核对日期 |
 | --- | --- | --- |
@@ -18,8 +19,10 @@ HunyuanVideo 有 1614 次引用但只有 12 个 upvote，Kandinsky 5.0 有 236 �
 2023–2024 只留仍在支撑 2026 工作的那几篇。AnimateDiff（1672 次引用）、MAGVIT-v2（687）、
 Movie Gen（629）、VideoPoet（546）、Lumiere（544）、W.A.L.T（351）、GameNGen（280）
 引用量都不低，但技术路线已被取代，不占名额。
-新论文按引用速率和 upvote 计入——Seedance 2.0 上线 4 个月 101 次引用（25 次/月），
-比多数 2024 年论文的当期速率还快。
+
+新工作按引用速率和 upvote 计入，不按绝对引用量——Seedance 2.0 上线 4 个月 101 次引用
+（25 次/月），比多数 2024 年论文的当期速率还快。三项没有 arXiv 条目的官方技术报告
+（Sora、MiniMax H3）没有可比的引用与 upvote 数据，按技术影响单独判断。
 
 ## 全量清单
 
@@ -41,10 +44,10 @@ Movie Gen（629）、VideoPoet（546）、Lumiere（544）、W.A.L.T（351）、
 | 14 | 2025-09-24 | Chain-of-Frames | Video models are zero-shot learners and reasoners | arXiv 预印本 | Google DeepMind | 203 | 101 | [arXiv](https://arxiv.org/abs/2509.20328) |
 | 15 | 2025-11-24 | HunyuanVideo 1.5 | HunyuanVideo 1.5 Technical Report | 腾讯混元技术报告 | 腾讯混元 | 107 | 29 | [arXiv](https://arxiv.org/abs/2511.18870) |
 | 16 | 2025-12-18 | Kling-Omni | Kling-Omni Technical Report | 快手可灵技术报告 | 快手可灵 | 50 | 173 | [arXiv](https://arxiv.org/abs/2512.16776) |
-| 17 | 2026-02-25 | SkyReels-V4 | SkyReels-V4: Multi-modal Video-Audio Generation, Inpainting and Editing model | 昆仑万维技术报告 | 昆仑万维 SkyReels（未核） | 10 | 55 | [arXiv](https://arxiv.org/abs/2602.21818) |
-| 18 | 2026-04-10 | Matrix-Game 3.0 | Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory | arXiv 预印本 | 昆仑万维 Skywork（未核） | 52 | 51 | [arXiv](https://arxiv.org/abs/2604.08995) |
-| 19 | 2026-04-15 | Seedance 2.0 | Seedance 2.0: Advancing Video Generation for World Complexity | 字节跳动 Seed Model Card | 字节跳动 Seed | 101 | 170 | [arXiv](https://arxiv.org/abs/2604.14148) |
-| 20 | 2026-07-10 | VidGen-VL | Video Generation Models are General-Purpose Vision Learners | ECCV 2026 | 未核 | 5 | 88 | [arXiv](https://arxiv.org/abs/2607.09024) |
+| 17 | 2026-04-10 | Matrix-Game 3.0 | Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory | arXiv 预印本 | 昆仑万维 Skywork（未核） | 52 | 51 | [arXiv](https://arxiv.org/abs/2604.08995) |
+| 18 | 2026-04-15 | Seedance 2.0 | Seedance 2.0: Advancing Video Generation for World Complexity | 字节跳动 Seed Model Card | 字节跳动 Seed | 101 | 170 | [arXiv](https://arxiv.org/abs/2604.14148) |
+| 19 | 2026-07-10 | VidGen-VL | Video Generation Models are General-Purpose Vision Learners | ECCV 2026 | 未核 | 5 | 88 | [arXiv](https://arxiv.org/abs/2607.09024) |
+| 20 | 2026-07-31 | MiniMax H3 | MiniMax H3: An Open Model Breaking the Boundaries Between Tasks and Modalities | MiniMax 官方技术报告（完整版未发布） | MiniMax | — | — | [官方页](https://www.minimax.io/blog/minimax-h3) |
 
 ## 凭什么进这 20 个
 
@@ -66,10 +69,10 @@ Movie Gen（629）、VideoPoet（546）、Lumiere（544）、W.A.L.T（351）、
 | Chain-of-Frames | 用 Veo 3 在 62 个未训练任务上验证零样本能力，提出 chain-of-frames；把视频模型重新定义为通用视觉基座 |
 | HunyuanVideo 1.5 | 8.3B 跑消费级显卡，SSTA 稀疏注意力；把开源视频生成拉回个人可负担区间 |
 | Kling-Omni | 173 upvote 是 2025 年底最高热度；生成/编辑/推理统一进一个框架，音画原生同步 |
-| SkyReels-V4 | 双流 MMDiT 一支出画一支出音，音画联合的开源代表；2026 年原生音频比画质更能拉开差距 |
 | Matrix-Game 3.0 | 实时流式可交互 + 长程记忆，开源阵营对标 Genie 3 的最近位置 |
 | Seedance 2.0 | 4 个月 101 次引用（25 次/月，新论文里最快）；Artificial Analysis 视频竞技场第一，全模态条件输入 |
 | VidGen-VL | 上线一个月 88 upvote；把 chain-of-frames 那条线推到「视频生成模型即通用视觉学习器」 |
+| MiniMax H3 | 33B 稠密单流 omni transformer，H3-VAE 把有效序列长度拉到 4 倍以支撑原生 2K；8-03 开源权重后成为首个登顶 Artificial Analysis 全球视频榜的开源模型，压过全部闭源 |
 
 ## 已知没核到的
 
@@ -77,8 +80,9 @@ Movie Gen（629）、VideoPoet（546）、Lumiere（544）、W.A.L.T（351）、
 | --- | --- |
 | 标 **（未核）** 的机构 | OpenAlex 对 arXiv 预印本没有机构字段，且会误配（把 HunyuanVideo 配给 "Applied GeoSolutions"）。可靠来源只有 PDF 首页作者块，尚未拉取 |
 | Genie 的 ICML 2024 Best Paper | 会议名经 Semantic Scholar 确认，**最佳论文这一项未核**，故表中只写 ICML 2024 |
-| Sora 报告的引用量 | 非 arXiv 条目，Semantic Scholar 与 HF 都无记录，无法给数字 |
-| 2026-05 之后的工作 | 只覆盖到 2026-07；最近几个月的新论文可能还没进入检索视野 |
+| Sora 报告与 MiniMax H3 的引用量 | 均非 arXiv 条目，Semantic Scholar 与 HF 都无记录，无法给数字 |
+| MiniMax H3 的完整技术报告 | 官方页写明「完整报告即将发布」，当前只有博客级描述。表中链接指官方页 |
+| 无论文的重要产品 | Veo 3.1、Kling 3.0、Genie 3 / Project Genie、Runway Gen-4、LTX-2.5、FLUX 3 Video 均无独立论文，按「只收 Paper / 技术报告」的口径不进表 |
 
 arXiv ID、标题、首次公开日期已全部经 arXiv API 逐条核对，与官方元数据一致。
 发表会议经 Semantic Scholar 与 arXiv comment 字段双源确认。
