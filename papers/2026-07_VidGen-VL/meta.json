@@ -1,0 +1,23 @@
+{
+ "short": "VidGen-VL",
+ "date": "2026/07/10",
+ "arxiv_id": "2607.09024",
+ "title": "Video Generation Models are General-Purpose Vision Learners",
+ "url": "https://arxiv.org/abs/2607.09024",
+ "venue": "ECCV 2026",
+ "org": "未核",
+ "cn_chars": 3153,
+ "attempts": 1,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 5,
+  "hf_upvotes": 88,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-08-31"
+ },
+ "task": [
+  "生成"
+ ],
+ "type": "方法",
+ "line": "视频模型即通用视觉基座"
+}

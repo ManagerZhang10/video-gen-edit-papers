@@ -1,0 +1,23 @@
+{
+ "short": "VBench",
+ "date": "2023/11/29",
+ "arxiv_id": "2311.17982",
+ "title": "VBench: Comprehensive Benchmark Suite for Video Generative Models",
+ "url": "https://arxiv.org/abs/2311.17982",
+ "venue": "CVPR 2024",
+ "org": "南洋理工大学 S-Lab / 上海人工智能实验室（未核）",
+ "cn_chars": 3790,
+ "attempts": 2,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 1842,
+  "hf_upvotes": 9,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-08-31"
+ },
+ "task": [
+  "生成"
+ ],
+ "type": "基准",
+ "line": "评测"
+}

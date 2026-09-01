@@ -1,0 +1,23 @@
+{
+ "short": "Seedance 1.0",
+ "date": "2025/06/10",
+ "arxiv_id": "2506.09113",
+ "title": "Seedance 1.0: Exploring the Boundaries of Video Generation Models",
+ "url": "https://arxiv.org/abs/2506.09113",
+ "venue": "字节跳动 Seed 技术报告",
+ "org": "字节跳动 Seed",
+ "cn_chars": 3861,
+ "attempts": 1,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 242,
+  "hf_upvotes": 109,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-08-31"
+ },
+ "task": [
+  "生成"
+ ],
+ "type": "技术报告",
+ "line": "基座架构"
+}

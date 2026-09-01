@@ -1,0 +1,24 @@
+{
+ "short": "VACE",
+ "date": "2025/03/10",
+ "arxiv_id": "2503.07598",
+ "title": "VACE: All-in-One Video Creation and Editing",
+ "url": "https://arxiv.org/abs/2503.07598",
+ "venue": "ICCV 2025",
+ "org": "阿里巴巴通义实验室",
+ "cn_chars": 3042,
+ "attempts": 1,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 472,
+  "hf_upvotes": 58,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-08-31"
+ },
+ "task": [
+  "生成",
+  "编辑"
+ ],
+ "type": "方法",
+ "line": "视频编辑与统一创作"
+}

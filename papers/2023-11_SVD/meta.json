@@ -1,0 +1,23 @@
+{
+ "short": "SVD",
+ "date": "2023/11/25",
+ "arxiv_id": "2311.15127",
+ "title": "Stable Video Diffusion: Scaling Latent Video Diffusion Models to Large Datasets",
+ "url": "https://arxiv.org/abs/2311.15127",
+ "venue": "arXiv 预印本",
+ "org": "Stability AI",
+ "cn_chars": 3325,
+ "attempts": 1,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 2856,
+  "hf_upvotes": 15,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-08-31"
+ },
+ "task": [
+  "生成"
+ ],
+ "type": "方法",
+ "line": "基座架构"
+}

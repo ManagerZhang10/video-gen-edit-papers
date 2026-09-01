@@ -1,0 +1,23 @@
+{
+ "short": "Seedance 2.0",
+ "date": "2026/04/15",
+ "arxiv_id": "2604.14148",
+ "title": "Seedance 2.0: Advancing Video Generation for World Complexity",
+ "url": "https://arxiv.org/abs/2604.14148",
+ "venue": "字节跳动 Seed Model Card",
+ "org": "字节跳动 Seed",
+ "cn_chars": 3070,
+ "attempts": 1,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 101,
+  "hf_upvotes": 170,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-08-31"
+ },
+ "task": [
+  "生成"
+ ],
+ "type": "技术报告",
+ "line": "基座架构"
+}

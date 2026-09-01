@@ -1,0 +1,23 @@
+{
+ "short": "HunyuanVideo",
+ "date": "2024/12/03",
+ "arxiv_id": "2412.03603",
+ "title": "HunyuanVideo: A Systematic Framework For Large Video Generative Models",
+ "url": "https://arxiv.org/abs/2412.03603",
+ "venue": "arXiv 预印本",
+ "org": "腾讯混元",
+ "cn_chars": 3576,
+ "attempts": 2,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 1614,
+  "hf_upvotes": 12,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-08-31"
+ },
+ "task": [
+  "生成"
+ ],
+ "type": "技术报告",
+ "line": "基座架构"
+}

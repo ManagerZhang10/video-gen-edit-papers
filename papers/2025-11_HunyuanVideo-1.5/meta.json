@@ -1,0 +1,23 @@
+{
+ "short": "HunyuanVideo 1.5",
+ "date": "2025/11/24",
+ "arxiv_id": "2511.18870",
+ "title": "HunyuanVideo 1.5 Technical Report",
+ "url": "https://arxiv.org/abs/2511.18870",
+ "venue": "腾讯混元技术报告",
+ "org": "腾讯混元",
+ "cn_chars": 3204,
+ "attempts": 3,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 107,
+  "hf_upvotes": 29,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-08-31"
+ },
+ "task": [
+  "生成"
+ ],
+ "type": "技术报告",
+ "line": "基座架构"
+}

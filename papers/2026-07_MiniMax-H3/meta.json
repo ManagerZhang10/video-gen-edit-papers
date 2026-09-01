@@ -1,0 +1,23 @@
+{
+ "short": "MiniMax H3",
+ "date": "2026/07/31",
+ "arxiv_id": null,
+ "title": "MiniMax H3: An Open Model Breaking the Boundaries Between Tasks and Modalities",
+ "url": "https://www.minimax.io/blog/minimax-h3",
+ "venue": "MiniMax 官方技术报告（完整版未发布）",
+ "org": "MiniMax",
+ "cn_chars": 3024,
+ "attempts": 1,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": null,
+  "hf_upvotes": null,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-08-31"
+ },
+ "task": [
+  "生成"
+ ],
+ "type": "技术报告",
+ "line": "统一多模态"
+}

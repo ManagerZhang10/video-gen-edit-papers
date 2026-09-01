@@ -1,0 +1,23 @@
+{
+ "short": "Self Forcing",
+ "date": "2025/06/09",
+ "arxiv_id": "2506.08009",
+ "title": "Self Forcing: Bridging the Train-Test Gap in Autoregressive Video Diffusion",
+ "url": "https://arxiv.org/abs/2506.08009",
+ "venue": "NeurIPS 2025 (Spotlight)",
+ "org": "Adobe Research / 德州大学奥斯汀分校（未核）",
+ "cn_chars": 3493,
+ "attempts": 2,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 519,
+  "hf_upvotes": 32,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-08-31"
+ },
+ "task": [
+  "生成"
+ ],
+ "type": "方法",
+ "line": "少步与因果蒸馏"
+}

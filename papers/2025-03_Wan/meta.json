@@ -1,0 +1,23 @@
+{
+ "short": "Wan",
+ "date": "2025/03/26",
+ "arxiv_id": "2503.20314",
+ "title": "Wan: Open and Advanced Large-Scale Video Generative Models",
+ "url": "https://arxiv.org/abs/2503.20314",
+ "venue": "arXiv 预印本",
+ "org": "阿里巴巴通义实验室",
+ "cn_chars": 3259,
+ "attempts": 3,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 2414,
+  "hf_upvotes": 71,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-08-31"
+ },
+ "task": [
+  "生成"
+ ],
+ "type": "技术报告",
+ "line": "基座架构"
+}

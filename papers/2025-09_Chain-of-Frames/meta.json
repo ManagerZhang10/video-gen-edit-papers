@@ -1,0 +1,23 @@
+{
+ "short": "Chain-of-Frames",
+ "date": "2025/09/24",
+ "arxiv_id": "2509.20328",
+ "title": "Video models are zero-shot learners and reasoners",
+ "url": "https://arxiv.org/abs/2509.20328",
+ "venue": "arXiv 预印本",
+ "org": "Google DeepMind",
+ "cn_chars": 3243,
+ "attempts": 2,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 203,
+  "hf_upvotes": 101,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-08-31"
+ },
+ "task": [
+  "生成"
+ ],
+ "type": "方法",
+ "line": "视频模型即通用视觉基座"
+}

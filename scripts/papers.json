@@ -8,6 +8,11 @@
   "pdf": "https://arxiv.org/pdf/2311.15127",
   "venue": "arXiv 预印本",
   "org": "Stability AI",
+  "task": [
+   "生成"
+  ],
+  "type": "方法",
+  "line": "基座架构",
   "cites": 2856,
   "upvotes": 15,
   "why": "至今引用量最高的视频生成论文；数据策展流程被后续几乎所有工作沿用"
@@ -21,6 +26,11 @@
   "pdf": "https://arxiv.org/pdf/2311.17982",
   "venue": "CVPR 2024",
   "org": "南洋理工大学 S-Lab / 上海人工智能实验室（未核）",
+  "task": [
+   "生成"
+  ],
+  "type": "基准",
+  "line": "评测",
   "cites": 1842,
   "upvotes": 9,
   "why": "2026 年的论文仍默认报 VBench 分数，是唯一活下来的评测口径"
@@ -34,6 +44,11 @@
   "pdf": null,
   "venue": "OpenAI 技术报告（无同行评审）",
   "org": "OpenAI",
+  "task": [
+   "生成"
+  ],
+  "type": "技术报告",
+  "line": "基座架构",
   "cites": null,
   "upvotes": null,
   "why": "确立 DiT + 时空 patch + 规模化的范式，此后所有基座模型都在这条线上"
@@ -47,6 +62,11 @@
   "pdf": "https://arxiv.org/pdf/2402.15391",
   "venue": "ICML 2024",
   "org": "Google DeepMind",
+  "task": [
+   "生成"
+  ],
+  "type": "方法",
+  "line": "世界模型与交互环境",
   "cites": 773,
   "upvotes": 72,
   "why": "world model 这条线的源头，直通 Genie 3 与 2026-01 上线的 Project Genie"
@@ -60,6 +80,11 @@
   "pdf": "https://arxiv.org/pdf/2408.06072",
   "venue": "ICLR 2025",
   "org": "智谱 AI / 清华大学（未核）",
+  "task": [
+   "生成"
+  ],
+  "type": "模型",
+  "line": "基座架构",
   "cites": 2309,
   "upvotes": 37,
   "why": "第一个真正可用的开源 DiT 视频模型，3D VAE + expert transformer 成为开源默认结构"
@@ -73,6 +98,11 @@
   "pdf": "https://arxiv.org/pdf/2412.03603",
   "venue": "arXiv 预印本",
   "org": "腾讯混元",
+  "task": [
+   "生成"
+  ],
+  "type": "技术报告",
+  "line": "基座架构",
   "cites": 1614,
   "upvotes": 12,
   "why": "13B 开源权重，把开源与闭源的差距第一次压到可比"
@@ -86,6 +116,11 @@
   "pdf": "https://arxiv.org/pdf/2412.07772",
   "venue": "CVPR 2025",
   "org": "MIT / Adobe Research（未核）",
+  "task": [
+   "生成"
+  ],
+  "type": "方法",
+  "line": "少步与因果蒸馏",
   "cites": 387,
   "upvotes": 3,
   "why": "引用量不高但是整个 Forcing 家族的根：双向教师蒸馏成因果学生，实时视频生成从这里开始"
@@ -99,6 +134,11 @@
   "pdf": "https://arxiv.org/pdf/2501.03575",
   "venue": "arXiv 预印本",
   "org": "NVIDIA",
+  "task": [
+   "生成"
+  ],
+  "type": "技术报告",
+  "line": "世界模型与交互环境",
   "cites": 817,
   "upvotes": 84,
   "why": "把视频生成明确定位成机器人与自动驾驶的数据引擎，开辟 physical AI 应用面"
@@ -112,6 +152,12 @@
   "pdf": "https://arxiv.org/pdf/2503.07598",
   "venue": "ICCV 2025",
   "org": "阿里巴巴通义实验室",
+  "task": [
+   "生成",
+   "编辑"
+  ],
+  "type": "方法",
+  "line": "视频编辑与统一创作",
   "cites": 472,
   "upvotes": 58,
   "why": "生成与编辑统一进一个模型，是 ComfyUI 生态里被实际接得最多的可控方案"
@@ -125,6 +171,11 @@
   "pdf": "https://arxiv.org/pdf/2503.20314",
   "venue": "arXiv 预印本",
   "org": "阿里巴巴通义实验室",
+  "task": [
+   "生成"
+  ],
+  "type": "技术报告",
+  "line": "基座架构",
   "cites": 2414,
   "upvotes": 71,
   "why": "17 个月 2414 次引用（142 次/月，全表最高）；2026 年绝大多数开源二次开发的底座"
@@ -138,6 +189,11 @@
   "pdf": "https://arxiv.org/pdf/2505.07818",
   "venue": "arXiv 预印本",
   "org": "字节跳动 / 香港大学（未核）",
+  "task": [
+   "生成"
+  ],
+  "type": "奖励与 RL",
+  "line": "RL 与对齐",
   "cites": 352,
   "upvotes": 34,
   "why": "把 GRPO 搬到视觉生成，RL 后训练从此成为视频基座的标配环节"
@@ -151,6 +207,11 @@
   "pdf": "https://arxiv.org/pdf/2506.08009",
   "venue": "NeurIPS 2025 (Spotlight)",
   "org": "Adobe Research / 德州大学奥斯汀分校（未核）",
+  "task": [
+   "生成"
+  ],
+  "type": "方法",
+  "line": "少步与因果蒸馏",
   "cites": 519,
   "upvotes": 32,
   "why": "用学生自 rollout 消掉训练-推理落差，单卡亚秒延迟；衍生出 Rolling / Causal / Sparse / Light Forcing 一整族"
@@ -164,6 +225,11 @@
   "pdf": "https://arxiv.org/pdf/2506.09113",
   "venue": "字节跳动 Seed 技术报告",
   "org": "字节跳动 Seed",
+  "task": [
+   "生成"
+  ],
+  "type": "技术报告",
+  "line": "基座架构",
   "cites": 242,
   "upvotes": 109,
   "why": "闭源阵营里少见地把训练与推理加速细节写清楚的报告，1080p/5s 仅 41.4 秒"
@@ -177,6 +243,11 @@
   "pdf": "https://arxiv.org/pdf/2509.20328",
   "venue": "arXiv 预印本",
   "org": "Google DeepMind",
+  "task": [
+   "生成"
+  ],
+  "type": "方法",
+  "line": "视频模型即通用视觉基座",
   "cites": 203,
   "upvotes": 101,
   "why": "用 Veo 3 在 62 个未训练任务上验证零样本能力，提出 chain-of-frames；把视频模型重新定义为通用视觉基座"
@@ -190,6 +261,11 @@
   "pdf": "https://arxiv.org/pdf/2511.18870",
   "venue": "腾讯混元技术报告",
   "org": "腾讯混元",
+  "task": [
+   "生成"
+  ],
+  "type": "技术报告",
+  "line": "基座架构",
   "cites": 107,
   "upvotes": 29,
   "why": "8.3B 跑消费级显卡，SSTA 稀疏注意力；把开源视频生成拉回个人可负担区间"
@@ -203,6 +279,12 @@
   "pdf": "https://arxiv.org/pdf/2512.16776",
   "venue": "快手可灵技术报告",
   "org": "快手可灵",
+  "task": [
+   "生成",
+   "编辑"
+  ],
+  "type": "技术报告",
+  "line": "统一多模态",
   "cites": 50,
   "upvotes": 173,
   "why": "173 upvote 是 2025 年底最高热度；生成/编辑/推理统一进一个框架，音画原生同步"
@@ -216,6 +298,11 @@
   "pdf": "https://arxiv.org/pdf/2604.08995",
   "venue": "arXiv 预印本",
   "org": "昆仑万维 Skywork（未核）",
+  "task": [
+   "生成"
+  ],
+  "type": "方法",
+  "line": "世界模型与交互环境",
   "cites": 52,
   "upvotes": 51,
   "why": "实时流式可交互 + 长程记忆，开源阵营对标 Genie 3 的最近位置"
@@ -229,6 +316,11 @@
   "pdf": "https://arxiv.org/pdf/2604.14148",
   "venue": "字节跳动 Seed Model Card",
   "org": "字节跳动 Seed",
+  "task": [
+   "生成"
+  ],
+  "type": "技术报告",
+  "line": "基座架构",
   "cites": 101,
   "upvotes": 170,
   "why": "4 个月 101 次引用（25 次/月，新论文里最快）；Artificial Analysis 视频竞技场第一，全模态条件输入"
@@ -242,6 +334,11 @@
   "pdf": "https://arxiv.org/pdf/2607.09024",
   "venue": "ECCV 2026",
   "org": "未核",
+  "task": [
+   "生成"
+  ],
+  "type": "方法",
+  "line": "视频模型即通用视觉基座",
   "cites": 5,
   "upvotes": 88,
   "why": "上线一个月 88 upvote；把 chain-of-frames 那条线推到「视频生成模型即通用视觉学习器」"
@@ -255,6 +352,11 @@
   "pdf": null,
   "venue": "MiniMax 官方技术报告（完整版未发布）",
   "org": "MiniMax",
+  "task": [
+   "生成"
+  ],
+  "type": "技术报告",
+  "line": "统一多模态",
   "cites": null,
   "upvotes": null,
   "why": "33B 稠密单流 omni transformer，H3-VAE 把有效序列长度拉到 4 倍以支撑原生 2K；8-03 开源权重后成为首个登顶 Artificial Analysis 全球视频榜的开源模型，压过全部闭源"

@@ -1,0 +1,23 @@
+{
+ "short": "Genie",
+ "date": "2024/02/23",
+ "arxiv_id": "2402.15391",
+ "title": "Genie: Generative Interactive Environments",
+ "url": "https://arxiv.org/abs/2402.15391",
+ "venue": "ICML 2024",
+ "org": "Google DeepMind",
+ "cn_chars": 3522,
+ "attempts": 1,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 773,
+  "hf_upvotes": 72,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-08-31"
+ },
+ "task": [
+  "生成"
+ ],
+ "type": "方法",
+ "line": "世界模型与交互环境"
+}

@@ -7,7 +7,11 @@ import json, os, re, sys, time, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MAILTO = "zhangyu@romangic.com"
+# OpenAlex / Semantic Scholar 的 polite pool 要一个联系邮箱。
+# 本仓库是公开的，不把邮箱写死在代码里——从环境变量读，没设就不带 mailto
+# （不带也能用，只是走匿名池、限流更严）。
+#     export PAPER_CONTACT_MAIL=you@example.com
+MAILTO = os.environ.get("PAPER_CONTACT_MAIL", "")
 UA = {"User-Agent": f"video-gen-papers/1.0 (mailto:{MAILTO})"}
 
 

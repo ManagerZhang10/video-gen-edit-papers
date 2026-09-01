@@ -1,0 +1,23 @@
+{
+ "short": "CausVid",
+ "date": "2024/12/10",
+ "arxiv_id": "2412.07772",
+ "title": "From Slow Bidirectional to Fast Autoregressive Video Diffusion Models",
+ "url": "https://arxiv.org/abs/2412.07772",
+ "venue": "CVPR 2025",
+ "org": "MIT / Adobe Research（未核）",
+ "cn_chars": 3893,
+ "attempts": 2,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 387,
+  "hf_upvotes": 3,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-08-31"
+ },
+ "task": [
+  "生成"
+ ],
+ "type": "方法",
+ "line": "少步与因果蒸馏"
+}

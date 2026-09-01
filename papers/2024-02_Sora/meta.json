@@ -1,0 +1,35 @@
+{
+ "short": "Sora",
+ "date": "2024/02/15",
+ "arxiv_id": null,
+ "title": "Video generation models as world simulators",
+ "url": "https://openai.com/index/video-generation-models-as-world-simulators/",
+ "venue": "OpenAI 技术报告（无同行评审）",
+ "org": "OpenAI",
+ "cn_chars": 4072,
+ "attempts": 1,
+ "note": "DeepSeek V4 Pro 生成，v2 规范（8 节 / 3000～5000 字）。事实来源不是 PDF——这份报告只发在 OpenAI 官网，没有 arXiv 条目也没有 PDF。openai.com 对脚本请求返回 403，正文取自 Internet Archive 2026-08-27 快照的官方页 HTML，去标签后 17,763 字符。因此报告没写的内容（参数量、卡数、数据规模、定量基准）在解读里一律标为未披露，不能反推。",
+ "impact": {
+  "citation_count": null,
+  "hf_upvotes": null,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-08-31"
+ },
+ "task": [
+  "生成"
+ ],
+ "type": "技术报告",
+ "line": "基座架构",
+ "source_type": "official_technical_report_no_pdf",
+ "paper_pdf": false,
+ "text_source": {
+  "kind": "wayback_snapshot_of_official_page",
+  "official_url": "https://openai.com/index/video-generation-models-as-world-simulators/",
+  "official_direct_fetch": "HTTP 403 Forbidden（openai.com 拒绝脚本请求）",
+  "snapshot_url": "https://web.archive.org/web/20260827114438id_/https://openai.com/index/video-generation-models-as-world-simulators/",
+  "snapshot_timestamp": "2026-08-27T11:44:38Z",
+  "extracted_chars": 17763,
+  "extracted_sha256": "60df1b914660a17ad168c8b0587673a3ecfd968c48d00a50ebcac3fef865e741"
+ },
+ "checked_at": "2026-09-01"
+}

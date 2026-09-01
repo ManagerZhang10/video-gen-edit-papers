@@ -1,0 +1,24 @@
+{
+ "short": "Kling-Omni",
+ "date": "2025/12/18",
+ "arxiv_id": "2512.16776",
+ "title": "Kling-Omni Technical Report",
+ "url": "https://arxiv.org/abs/2512.16776",
+ "venue": "快手可灵技术报告",
+ "org": "快手可灵",
+ "cn_chars": 3105,
+ "attempts": 1,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 50,
+  "hf_upvotes": 173,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-08-31"
+ },
+ "task": [
+  "生成",
+  "编辑"
+ ],
+ "type": "技术报告",
+ "line": "统一多模态"
+}
