@@ -5,7 +5,7 @@
  "title": "Video Generation Models are General-Purpose Vision Learners",
  "url": "https://arxiv.org/abs/2607.09024",
  "venue": "ECCV 2026",
- "org": "未核",
+ "org": "谷歌DeepMind / 多伦多大学 / 伦敦大学学院 等 5 家",
  "cn_chars": 3153,
  "attempts": 1,
  "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
@@ -19,5 +19,6 @@
   "生成"
  ],
  "type": "方法",
- "line": "视频模型即通用视觉基座"
+ "line": "视频模型即通用视觉基座",
+ "org_source": "PDF 首页作者块（模型抽取），2026-09-02"
 }

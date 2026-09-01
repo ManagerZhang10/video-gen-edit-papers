@@ -1,0 +1,26 @@
+{
+ "short": "Gen-1",
+ "date": "2023/02/06",
+ "arxiv_id": "2302.03011",
+ "title": "Structure and Content-Guided Video Synthesis with Diffusion Models",
+ "url": "https://arxiv.org/abs/2302.03011",
+ "venue": "ICCV 2023",
+ "org": "Runway",
+ "cn_chars": 3720,
+ "attempts": 2,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 766,
+  "hf_upvotes": 1,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-09-01"
+ },
+ "org_source": "PDF 首页作者块（模型抽取），2026-09-02",
+ "task": [
+  "生成",
+  "编辑"
+ ],
+ "type": "方法",
+ "line": "视频编辑与统一创作",
+ "batch": "2026-09 扩充（20 → 50）"
+}

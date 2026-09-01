@@ -1,0 +1,25 @@
+{
+ "short": "LongLive",
+ "date": "2025/09/26",
+ "arxiv_id": "2509.22622",
+ "title": "LongLive: Real-time Interactive Long Video Generation",
+ "url": "https://arxiv.org/abs/2509.22622",
+ "venue": "arXiv 预印本",
+ "org": "英伟达 / 香港科技大学（广州） / 香港大学 等 5 家",
+ "cn_chars": 3679,
+ "attempts": 2,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 211,
+  "hf_upvotes": 190,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-09-01"
+ },
+ "org_source": "PDF 首页作者块（模型抽取），2026-09-02",
+ "task": [
+  "生成"
+ ],
+ "type": "方法",
+ "line": "长视频与实时流式生成",
+ "batch": "2026-09 扩充（20 → 50）"
+}

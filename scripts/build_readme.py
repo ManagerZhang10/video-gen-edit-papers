@@ -9,7 +9,7 @@ import json, os, re
 from collections import Counter, OrderedDict
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CHECKED = "2026-09-01"
+CHECKED = "2026-09-02"
 
 
 def cjk(t):
@@ -23,6 +23,8 @@ def folder(p):
 def main():
     ps = json.load(open(f"{ROOT}/scripts/papers.json", encoding="utf-8"))
     ps.sort(key=lambda p: p["date"])
+    span_lo, span_hi = ps[0]["date"][:7], ps[-1]["date"][:7]      # YYYY/MM
+    yr_lo, yr_hi = span_lo[:4], span_hi[:4]
 
     rows, whys, total, have = [], [], 0, 0
     for i, p in enumerate(ps, 1):
@@ -42,23 +44,37 @@ def main():
         whys.append(f"| {p['short']} | {p['type']} | {c} | {u} | {p['why']} |")
 
     tasks = Counter(t for p in ps for t in p["task"])
+    both = [p["short"] for p in ps if set(p["task"]) == {"生成", "编辑"}]
     lines = OrderedDict()
     for p in ps:
         lines.setdefault(p["line"], []).append(p["short"])
     line_rows = [f"| {k} | {len(v)} | {'、'.join(v)} |"
                  for k, v in sorted(lines.items(), key=lambda kv: -len(kv[1]))]
 
-    head = f"""# 视频生成与编辑论文库 2023–2026
+    # 「已知没核到的」几行按数据算，不写死篇数
+    # 「未核」既可能是 org 为空，也可能是机构串里带着（未核）标记，两种都要算
+    org_unknown = [p["short"] for p in ps
+                   if not p.get("org") or "未核" in p["org"]]
+    ORG_METHOD = ('机构只认 PDF 首页作者块——**没用 OpenAlex 补**，它对 arXiv 预印本几乎没有'
+                  '机构字段，且已知会误配（把 HunyuanVideo 配给 "Applied GeoSolutions"）。')
+    org_line = (f"{len(ps)} 篇全部核过。" + ORG_METHOD if not org_unknown
+                else f"**{len(org_unknown)} 篇未核**：{'、'.join(org_unknown)}。" + ORG_METHOD)
+    NO_YEAR_OK = ("预印本", "技术报告", "Model Card", "官方")      # 这些本来就没有会议年份
+    venue_no_year = [p["short"] for p in ps
+                     if p["venue"] and not re.search(r"\d{4}", p["venue"])
+                     and not any(k in p["venue"] for k in NO_YEAR_OK)]
+
+    head = f"""# 视频生成与编辑论文库 {yr_lo}–{yr_hi}
 
 [![papers](https://img.shields.io/badge/papers-{len(ps)}-2b7489)](#全量清单)
 [![notes](https://img.shields.io/badge/notes-{total//1000}K_CJK_chars-4c9a2a)](#全量清单)
-[![coverage](https://img.shields.io/badge/coverage-2023.11_--_2026.07-e07b39)](#全量清单)
+[![coverage](https://img.shields.io/badge/coverage-{span_lo.replace("/", ".")}_--_{span_hi.replace("/", ".")}-e07b39)](#全量清单)
 [![license](https://img.shields.io/badge/license-CC_BY_4.0-777777)](LICENSE)
 
 **{len(ps)} 篇视频生成与编辑领域最有影响力的论文，每篇一份中文解读，外加一条核验过的原文直链。**
-时间跨度 2023-11 → 2026-07，解读合计 {total:,} 个汉字。
+时间跨度 {span_lo.replace("/", "-")} → {span_hi.replace("/", "-")}，解读合计 {total:,} 个汉字。
 
-*{len(ps)} most influential video generation & editing papers, each with a Chinese reading note and a verified link to the source. Nov 2023 – Jul 2026.*
+*{len(ps)} most influential video generation & editing papers, each with a Chinese reading note and a verified link to the source. {span_lo.replace("/", "-")} – {span_hi.replace("/", "-")}.*
 
 > **维护者** [@ManagerYu10](https://github.com/ManagerYu10) · **授权** [CC BY 4.0](LICENSE) · **最后核对** {CHECKED}
 >
@@ -79,8 +95,8 @@ def main():
 | 生成 | {tasks['生成']} |
 | 编辑 | {tasks['编辑']} |
 
-⚠️ **当前这一期以生成为主，编辑只有 {tasks['编辑']} 篇**（VACE、Kling-Omni，都是生成/编辑
-统一的工作）。专门做视频编辑的论文是下一期的补充方向，现在不假装已经覆盖。
+其中 {len(both)} 篇同时是两者（生成/编辑统一的模型）：{'、'.join(both)}。
+
 图像侧的生成与编辑在另一个库：[image-gen-edit-papers](https://github.com/ManagerYu10/image-gen-edit-papers)。
 
 ## 怎么用
@@ -109,9 +125,14 @@ python3 scripts/fetch_pdfs.py --list   # 只列缺什么
 | 引用量 | Semantic Scholar Graph API | 2026-08-31 |
 | 业界关注度（upvote） | Hugging Face Papers API | 2026-08-31 |
 
-2023–2024 只留仍在支撑 2026 工作的那几篇。AnimateDiff（1,672 次引用）、MAGVIT-v2（687）、
-Movie Gen（629）、VideoPoet（546）、Lumiere（544）、W.A.L.T（351）、GameNGen（280）
-引用量都不低，但技术路线已被取代，不占名额。
+**技术路线已被取代的不占名额**，无论引用量多高：AnimateDiff（1,672 次引用）、
+Make-A-Video（2,154）、Imagen Video（2,140）、Align Your Latents（1,768，潜空间视频扩散
+奠基，但库里的 SVD 是它的直接后继）、MAGVIT-v2（687）、Movie Gen（629）、VideoPoet（546）、
+Lumiere（544）、W.A.L.T（351）、GameNGen（280）都在这条规则下落选。
+
+2026-09-02 从 20 篇扩到 50 篇，重点是补上视频编辑——改名成「生成与编辑」之后，
+原来 20 篇里只有 2 篇沾编辑。这一轮的候选池、双轴快照、以及每一篇被换下来的理由，
+见 [docs/清单扩充_2026-09.md](docs/清单扩充_2026-09.md)。
 
 新工作按引用速率和 upvote 计入，不按绝对引用量——Seedance 2.0 上线 4 个月 101 次引用
 （25 次/月），比多数 2024 年论文的当期速率还快。两项没有 arXiv 条目的官方技术报告
@@ -139,7 +160,7 @@ Movie Gen（629）、VideoPoet（546）、Lumiere（544）、W.A.L.T（351）、
 | 简称 | 类型 | 引用 | upvote | 理由 |
 | --- | --- | ---: | ---: | --- |
 """
-    tail = """
+    tail = f"""
 
 ## 仓库长什么样
 
@@ -150,6 +171,7 @@ video-gen-edit-papers/
 ├── docs/
 │   ├── prompt.md          ← 生成解读用的 prompt（原样作为 system prompt）
 │   ├── INDEX.md           ← 按技术脉络与任务分组的索引
+│   ├── 清单扩充_2026-09.md ← 20 → 50 篇那一轮的选法、双轴快照与备选池
 │   └── 许可清单.md         ← 逐篇原文许可，判断能不能公开转载译文
 ├── scripts/
 │   ├── papers.json        ← 元数据唯一事实来源，README 与 INDEX 由它生成
@@ -167,19 +189,21 @@ video-gen-edit-papers/
 ```
 
 `translations/` 目录里有 10 份全文翻译，**刻意没有提交**：arXiv 的永久非独占许可
-没有把演绎权授给第三方，公开发布译文需要作者授权。判断口径见 docs/许可清单.md。
+没有把演绎权授给第三方，公开发布译文需要作者授权。逐篇许可见 docs/许可清单.md。
 
 ## 已知没核到的
 
 | 项 | 状态 |
 | --- | --- |
-| 标 **（未核）** 的机构 | OpenAlex 对 arXiv 预印本没有机构字段，且会误配（把 HunyuanVideo 配给 "Applied GeoSolutions"）。可靠来源只有 PDF 首页作者块 |
+| 机构 | {org_line} |
+| 发表信息只有会议名、没有年份的 {len(venue_no_year)} 篇 | {'、'.join(venue_no_year) if venue_no_year else '无'}。Semantic Scholar 的 `year` 字段是论文年份不是会议年份，拼上去就是造一个假事实；DBLP 在产出这批时连不上。宁可只写会议名 |
 | Genie 的 ICML 2024 Best Paper | 会议名经 Semantic Scholar 确认，**最佳论文这一项未核**，表中只写 ICML 2024 |
 | Sora 报告与 MiniMax H3 的引用量 | 均非 arXiv 条目，Semantic Scholar 与 HF 都无记录，不编数字 |
 | MiniMax H3 的完整技术报告 | 官方页写明「完整报告即将发布」，当前只有博客级描述 |
 | Sora 解读的事实来源 | 不是 PDF。这份报告只发在 OpenAI 官网，且 openai.com 拒绝脚本请求（HTTP 403），正文取自 Internet Archive 2026-08-27 的官方页快照。快照 URL 与抽取文本的 sha256 记在 `papers/2024-02_Sora/meta.json` |
 | 解读正文 | 机器生成，未逐句人工复核。数字与结论以原文为准 |
-| 视频编辑覆盖度 | 本期只有 2 篇涉及编辑，且都是生成/编辑统一的工作。专门的视频编辑论文尚未收 |
+| 视频编辑覆盖度 | 2026-09-02 扩到 50 篇时补上，编辑侧从 2 篇到 {tasks['编辑']} 篇。**但 2024 年是空的**——InsV2V（2023-11）之后直到 Señorita-2M（2025-02），中间 15 个月没有编辑论文入选。唯一够格的补位是 AnyV2V（2024-03），本轮按 50 篇名额没放进来 |
+| 原文许可 | 逐篇读 arXiv abs 页的许可声明，见 [docs/许可清单.md](docs/许可清单.md)。受限的是「公开再分发翻译」，不是翻译本身 |
 | 无论文的重要产品 | Veo 3.1、Kling 3.0、Genie 3 / Project Genie、Runway Gen-4、LTX-2.5、FLUX 3 Video 均无独立论文，按「只收 Paper / 技术报告」的口径不进表 |
 
 arXiv ID、标题、首次公开日期已全部经 arXiv API 逐条核对，与官方元数据一致。

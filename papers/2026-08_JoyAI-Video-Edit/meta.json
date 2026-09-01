@@ -1,0 +1,25 @@
+{
+ "short": "JoyAI-Video-Edit",
+ "date": "2026/08/04",
+ "arxiv_id": "2608.03974",
+ "title": "JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion",
+ "url": "https://arxiv.org/abs/2608.03974",
+ "venue": "arXiv 预印本",
+ "org": "京东 Joy Future Academy",
+ "cn_chars": 3110,
+ "attempts": 1,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 1,
+  "hf_upvotes": 104,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-09-01"
+ },
+ "org_source": "PDF 首页作者块（模型抽取），2026-09-02",
+ "task": [
+  "编辑"
+ ],
+ "type": "模型",
+ "line": "实时与流式编辑",
+ "batch": "2026-09 扩充（20 → 50）"
+}

@@ -1,0 +1,25 @@
+{
+ "short": "VBench-2.0",
+ "date": "2025/03/27",
+ "arxiv_id": "2503.21755",
+ "title": "VBench-2.0: Advancing Video Generation Benchmark Suite for Intrinsic Faithfulness",
+ "url": "https://arxiv.org/abs/2503.21755",
+ "venue": "arXiv 预印本",
+ "org": "上海人工智能实验室 / 南洋理工大学 / 中山大学 等 4 家",
+ "cn_chars": 3009,
+ "attempts": 1,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 250,
+  "hf_upvotes": 33,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-09-01"
+ },
+ "org_source": "PDF 首页作者块（模型抽取），2026-09-02",
+ "task": [
+  "生成"
+ ],
+ "type": "基准",
+ "line": "评测",
+ "batch": "2026-09 扩充（20 → 50）"
+}

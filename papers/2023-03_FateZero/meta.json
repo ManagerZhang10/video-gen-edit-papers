@@ -1,0 +1,25 @@
+{
+ "short": "FateZero",
+ "date": "2023/03/16",
+ "arxiv_id": "2303.09535",
+ "title": "FateZero: Fusing Attentions for Zero-shot Text-based Video Editing",
+ "url": "https://arxiv.org/abs/2303.09535",
+ "venue": "ICCV 2023 (Oral)",
+ "org": "香港科技大学 / 腾讯 AI Lab / 中国科学院香港创新研究院",
+ "cn_chars": 3653,
+ "attempts": 1,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 565,
+  "hf_upvotes": 1,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-09-01"
+ },
+ "org_source": "PDF 首页作者块（模型抽取），2026-09-02",
+ "task": [
+  "编辑"
+ ],
+ "type": "方法",
+ "line": "训练-free 视频编辑",
+ "batch": "2026-09 扩充（20 → 50）"
+}

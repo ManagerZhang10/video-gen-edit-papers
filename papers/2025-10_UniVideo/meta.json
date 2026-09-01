@@ -1,0 +1,26 @@
+{
+ "short": "UniVideo",
+ "date": "2025/10/09",
+ "arxiv_id": "2510.08377",
+ "title": "UniVideo: Unified Understanding, Generation, and Editing for Videos",
+ "url": "https://arxiv.org/abs/2510.08377",
+ "venue": "arXiv 预印本",
+ "org": "滑铁卢大学 / 快手科技 Kling 团队",
+ "cn_chars": 3017,
+ "attempts": 2,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 84,
+  "hf_upvotes": 81,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-09-01"
+ },
+ "org_source": "PDF 首页作者块（模型抽取），2026-09-02",
+ "task": [
+  "生成",
+  "编辑"
+ ],
+ "type": "模型",
+ "line": "视频编辑与统一创作",
+ "batch": "2026-09 扩充（20 → 50）"
+}

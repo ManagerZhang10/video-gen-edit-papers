@@ -5,7 +5,7 @@
  "title": "Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory",
  "url": "https://arxiv.org/abs/2604.08995",
  "venue": "arXiv 预印本",
- "org": "昆仑万维 Skywork（未核）",
+ "org": "Skywork AI",
  "cn_chars": 4183,
  "attempts": 2,
  "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
@@ -19,5 +19,6 @@
   "生成"
  ],
  "type": "方法",
- "line": "世界模型与交互环境"
+ "line": "世界模型与交互环境",
+ "org_source": "PDF 首页作者块（模型抽取），2026-09-02"
 }

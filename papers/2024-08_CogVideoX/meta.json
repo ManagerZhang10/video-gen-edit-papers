@@ -5,7 +5,7 @@
  "title": "CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer",
  "url": "https://arxiv.org/abs/2408.06072",
  "venue": "ICLR 2025",
- "org": "智谱 AI / 清华大学（未核）",
+ "org": "清华大学 / 智谱AI",
  "cn_chars": 4048,
  "attempts": 1,
  "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
@@ -19,5 +19,6 @@
   "生成"
  ],
  "type": "模型",
- "line": "基座架构"
+ "line": "基座架构",
+ "org_source": "PDF 首页作者块（模型抽取），2026-09-02"
 }

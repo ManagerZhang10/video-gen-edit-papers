@@ -1,0 +1,25 @@
+{
+ "short": "VDM",
+ "date": "2022/04/07",
+ "arxiv_id": "2204.03458",
+ "title": "Video Diffusion Models",
+ "url": "https://arxiv.org/abs/2204.03458",
+ "venue": "NeurIPS 2022",
+ "org": "谷歌",
+ "cn_chars": 3239,
+ "attempts": 1,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 2834,
+  "hf_upvotes": 5,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-09-01"
+ },
+ "org_source": "PDF 首页作者块（模型抽取），2026-09-02",
+ "task": [
+  "生成"
+ ],
+ "type": "方法",
+ "line": "基座架构",
+ "batch": "2026-09 扩充（20 → 50）"
+}

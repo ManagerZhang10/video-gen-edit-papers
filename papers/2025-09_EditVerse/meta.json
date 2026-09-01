@@ -1,0 +1,26 @@
+{
+ "short": "EditVerse",
+ "date": "2025/09/24",
+ "arxiv_id": "2509.20360",
+ "title": "EditVerse: Unifying Image and Video Editing and Generation with In-Context Learning",
+ "url": "https://arxiv.org/abs/2509.20360",
+ "venue": "arXiv 预印本",
+ "org": "Adobe Research / 香港中文大学 / 约翰斯·霍普金斯大学 等 4 家",
+ "cn_chars": 3456,
+ "attempts": 1,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 50,
+  "hf_upvotes": 18,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-09-01"
+ },
+ "org_source": "PDF 首页作者块（模型抽取），2026-09-02",
+ "task": [
+  "生成",
+  "编辑"
+ ],
+ "type": "方法",
+ "line": "视频编辑与统一创作",
+ "batch": "2026-09 扩充（20 → 50）"
+}

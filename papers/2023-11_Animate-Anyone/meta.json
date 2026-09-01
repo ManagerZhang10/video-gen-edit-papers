@@ -1,0 +1,25 @@
+{
+ "short": "Animate Anyone",
+ "date": "2023/11/28",
+ "arxiv_id": "2311.17117",
+ "title": "Animate Anyone: Consistent and Controllable Image-to-Video Synthesis for Character Animation",
+ "url": "https://arxiv.org/abs/2311.17117",
+ "venue": "CVPR 2024",
+ "org": "阿里巴巴智能计算研究院",
+ "cn_chars": 3036,
+ "attempts": 1,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 861,
+  "hf_upvotes": 6,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-09-01"
+ },
+ "org_source": "PDF 首页作者块（模型抽取），2026-09-02",
+ "task": [
+  "生成"
+ ],
+ "type": "方法",
+ "line": "可控生成与运动控制",
+ "batch": "2026-09 扩充（20 → 50）"
+}

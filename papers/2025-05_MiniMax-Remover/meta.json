@@ -1,0 +1,25 @@
+{
+ "short": "MiniMax-Remover",
+ "date": "2025/05/30",
+ "arxiv_id": "2505.24873",
+ "title": "MiniMax-Remover: Taming Bad Noise Helps Video Object Removal",
+ "url": "https://arxiv.org/abs/2505.24873",
+ "venue": "NeurIPS 2025",
+ "org": "香港中文大学 / 深圳大学 / IntelliFusion Inc. 等 5 家",
+ "cn_chars": 3565,
+ "attempts": 2,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 41,
+  "hf_upvotes": 4,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-09-01"
+ },
+ "org_source": "PDF 首页作者块（模型抽取），2026-09-02",
+ "task": [
+  "编辑"
+ ],
+ "type": "方法",
+ "line": "视频修补与物体移除",
+ "batch": "2026-09 扩充（20 → 50）"
+}

@@ -1,0 +1,25 @@
+{
+ "short": "VideoPainter",
+ "date": "2025/03/07",
+ "arxiv_id": "2503.05639",
+ "title": "VideoPainter: Any-length Video Inpainting and Editing with Plug-and-Play Context Control",
+ "url": "https://arxiv.org/abs/2503.05639",
+ "venue": "SIGGRAPH（年份未核）",
+ "org": "香港中文大学 / 腾讯 ARC Lab / 东京大学 等 4 家",
+ "cn_chars": 3157,
+ "attempts": 2,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 84,
+  "hf_upvotes": 29,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-09-01"
+ },
+ "org_source": "PDF 首页作者块（模型抽取），2026-09-02",
+ "task": [
+  "编辑"
+ ],
+ "type": "方法",
+ "line": "视频修补与物体移除",
+ "batch": "2026-09 扩充（20 → 50）"
+}

@@ -1,0 +1,25 @@
+{
+ "short": "InsV2V",
+ "date": "2023/11/01",
+ "arxiv_id": "2311.00213",
+ "title": "Consistent Video-to-Video Transfer Using Synthetic Dataset",
+ "url": "https://arxiv.org/abs/2311.00213",
+ "venue": "ICLR 2024",
+ "org": "亚马逊云科技上海人工智能实验室",
+ "cn_chars": 3145,
+ "attempts": 1,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 75,
+  "hf_upvotes": 1,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-09-01"
+ },
+ "org_source": "PDF 首页作者块（模型抽取），2026-09-02",
+ "task": [
+  "编辑"
+ ],
+ "type": "方法",
+ "line": "指令式视频编辑与数据集",
+ "batch": "2026-09 扩充（20 → 50）"
+}

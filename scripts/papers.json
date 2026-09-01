@@ -1,5 +1,153 @@
 [
  {
+  "short": "VDM",
+  "date": "2022/04/07",
+  "arxiv_id": "2204.03458",
+  "title": "Video Diffusion Models",
+  "url": "https://arxiv.org/abs/2204.03458",
+  "pdf": "https://arxiv.org/pdf/2204.03458",
+  "venue": "NeurIPS 2022",
+  "org": "谷歌",
+  "task": [
+   "生成"
+  ],
+  "type": "方法",
+  "line": "基座架构",
+  "cites": 2834,
+  "upvotes": 5,
+  "why": "视频扩散的原始论文，2834 次引用（53.7 次/月，全库最高绝对量）；3D U-Net + 梯度法联合条件采样是后续所有视频扩散工作的共同起点"
+ },
+ {
+  "short": "Tune-A-Video",
+  "date": "2022/12/22",
+  "arxiv_id": "2212.11565",
+  "title": "Tune-A-Video: One-Shot Tuning of Image Diffusion Models for Text-to-Video Generation",
+  "url": "https://arxiv.org/abs/2212.11565",
+  "pdf": "https://arxiv.org/pdf/2212.11565",
+  "venue": "ICCV 2023",
+  "org": "新加坡国立大学 Show Lab / 腾讯 PCG ARC Lab",
+  "task": [
+   "生成",
+   "编辑"
+  ],
+  "type": "方法",
+  "line": "训练-free 视频编辑",
+  "cites": 1201,
+  "upvotes": 3,
+  "why": "1201 次引用（27.1 次/月）；单视频一次调优就能改内容，「拿图像扩散模型当视频编辑器」这条线的根，2023 年几乎所有编辑方法都以它为基线",
+  "org_source": "PDF 首页作者块（抽取模型五次返回空，改由人读 _work/txt_Tune-A-Video.txt 开头录入）"
+ },
+ {
+  "short": "Gen-1",
+  "date": "2023/02/06",
+  "arxiv_id": "2302.03011",
+  "title": "Structure and Content-Guided Video Synthesis with Diffusion Models",
+  "url": "https://arxiv.org/abs/2302.03011",
+  "pdf": "https://arxiv.org/pdf/2302.03011",
+  "venue": "ICCV 2023",
+  "org": "Runway",
+  "task": [
+   "生成",
+   "编辑"
+  ],
+  "type": "方法",
+  "line": "视频编辑与统一创作",
+  "cites": 766,
+  "upvotes": 1,
+  "why": "766 次引用（17.9 次/月）；Runway Gen-1 的论文，第一个商业化的 video-to-video 模型，把结构与内容解耦成两路条件"
+ },
+ {
+  "short": "FateZero",
+  "date": "2023/03/16",
+  "arxiv_id": "2303.09535",
+  "title": "FateZero: Fusing Attentions for Zero-shot Text-based Video Editing",
+  "url": "https://arxiv.org/abs/2303.09535",
+  "pdf": "https://arxiv.org/pdf/2303.09535",
+  "venue": "ICCV 2023 (Oral)",
+  "org": "香港科技大学 / 腾讯 AI Lab / 中国科学院香港创新研究院",
+  "task": [
+   "编辑"
+  ],
+  "type": "方法",
+  "line": "训练-free 视频编辑",
+  "cites": 565,
+  "upvotes": 1,
+  "why": "565 次引用；第一篇专做零样本文本视频编辑的论文，反演期存注意力图、编辑期融合，training-free 编辑的注意力操控范式从这里定型"
+ },
+ {
+  "short": "Text2Video-Zero",
+  "date": "2023/03/23",
+  "arxiv_id": "2303.13439",
+  "title": "Text2Video-Zero: Text-to-Image Diffusion Models are Zero-Shot Video Generators",
+  "url": "https://arxiv.org/abs/2303.13439",
+  "pdf": "https://arxiv.org/pdf/2303.13439",
+  "venue": "ICCV 2023",
+  "org": "Picsart AI Research (PAIR) / 得克萨斯大学奥斯汀分校 / 俄勒冈大学 等 4 家",
+  "task": [
+   "生成",
+   "编辑"
+  ],
+  "type": "方法",
+  "line": "训练-free 视频编辑",
+  "cites": 872,
+  "upvotes": 6,
+  "why": "872 次引用（21.1 次/月）；不训练、不微调，只改潜码运动与跨帧注意力就把 SD 变成视频模型，也是最早接 ControlNet / InstructPix2Pix 做条件编辑的工作"
+ },
+ {
+  "short": "Rerender-A-Video",
+  "date": "2023/06/13",
+  "arxiv_id": "2306.07954",
+  "title": "Rerender A Video: Zero-Shot Text-Guided Video-to-Video Translation",
+  "url": "https://arxiv.org/abs/2306.07954",
+  "pdf": "https://arxiv.org/pdf/2306.07954",
+  "venue": "SIGGRAPH Asia 2023",
+  "org": "南洋理工大学 S-Lab",
+  "task": [
+   "编辑"
+  ],
+  "type": "方法",
+  "line": "训练-free 视频编辑",
+  "cites": 340,
+  "upvotes": 113,
+  "why": "113 upvote 是全部视频编辑论文里最高的一档；关键帧翻译 + 光流传播的两段式结构被后续大量长视频编辑工作沿用"
+ },
+ {
+  "short": "TokenFlow",
+  "date": "2023/07/19",
+  "arxiv_id": "2307.10373",
+  "title": "TokenFlow: Consistent Diffusion Features for Consistent Video Editing",
+  "url": "https://arxiv.org/abs/2307.10373",
+  "pdf": "https://arxiv.org/pdf/2307.10373",
+  "venue": "ICLR（年份未核）",
+  "org": "魏茨曼科学研究所",
+  "task": [
+   "编辑"
+  ],
+  "type": "方法",
+  "line": "训练-free 视频编辑",
+  "cites": 509,
+  "upvotes": 58,
+  "why": "509 次引用、58 upvote；发现扩散特征本身就带帧间对应关系，据此显式强制特征一致，是「一致性从哪来」这个问题的标准答案"
+ },
+ {
+  "short": "InsV2V",
+  "date": "2023/11/01",
+  "arxiv_id": "2311.00213",
+  "title": "Consistent Video-to-Video Transfer Using Synthetic Dataset",
+  "url": "https://arxiv.org/abs/2311.00213",
+  "pdf": "https://arxiv.org/pdf/2311.00213",
+  "venue": "ICLR 2024",
+  "org": "亚马逊云科技上海人工智能实验室",
+  "task": [
+   "编辑"
+  ],
+  "type": "方法",
+  "line": "指令式视频编辑与数据集",
+  "cites": 75,
+  "upvotes": 1,
+  "why": "引用只有 75 次，但是指令式视频编辑这条线的根：先用 Prompt-to-Prompt 合成成对视频数据，再训一个不需要逐视频微调的编辑模型，Señorita-2M / Ditto / OpenVE-3M 全在这条路上"
+ },
+ {
   "short": "SVD",
   "date": "2023/11/25",
   "arxiv_id": "2311.15127",
@@ -18,6 +166,24 @@
   "why": "至今引用量最高的视频生成论文；数据策展流程被后续几乎所有工作沿用"
  },
  {
+  "short": "Animate Anyone",
+  "date": "2023/11/28",
+  "arxiv_id": "2311.17117",
+  "title": "Animate Anyone: Consistent and Controllable Image-to-Video Synthesis for Character Animation",
+  "url": "https://arxiv.org/abs/2311.17117",
+  "pdf": "https://arxiv.org/pdf/2311.17117",
+  "venue": "CVPR 2024",
+  "org": "阿里巴巴智能计算研究院",
+  "task": [
+   "生成"
+  ],
+  "type": "方法",
+  "line": "可控生成与运动控制",
+  "cites": 861,
+  "upvotes": 6,
+  "why": "861 次引用（26.0 次/月）；ReferenceNet + 姿态引导，人物动画这条商业化最深的支线的根，直通 OmniHuman / Wan-Animate"
+ },
+ {
   "short": "VBench",
   "date": "2023/11/29",
   "arxiv_id": "2311.17982",
@@ -25,7 +191,7 @@
   "url": "https://arxiv.org/abs/2311.17982",
   "pdf": "https://arxiv.org/pdf/2311.17982",
   "venue": "CVPR 2024",
-  "org": "南洋理工大学 S-Lab / 上海人工智能实验室（未核）",
+  "org": "南洋理工大学 S-Lab / 上海人工智能实验室 / 香港中文大学 等 4 家",
   "task": [
    "生成"
   ],
@@ -79,7 +245,7 @@
   "url": "https://arxiv.org/abs/2408.06072",
   "pdf": "https://arxiv.org/pdf/2408.06072",
   "venue": "ICLR 2025",
-  "org": "智谱 AI / 清华大学（未核）",
+  "org": "清华大学 / 智谱AI",
   "task": [
    "生成"
   ],
@@ -115,7 +281,7 @@
   "url": "https://arxiv.org/abs/2412.07772",
   "pdf": "https://arxiv.org/pdf/2412.07772",
   "venue": "CVPR 2025",
-  "org": "MIT / Adobe Research（未核）",
+  "org": "麻省理工学院 / Adobe",
   "task": [
    "生成"
   ],
@@ -124,6 +290,42 @@
   "cites": 387,
   "upvotes": 3,
   "why": "引用量不高但是整个 Forcing 家族的根：双向教师蒸馏成因果学生，实时视频生成从这里开始"
+ },
+ {
+  "short": "Open-Sora",
+  "date": "2024/12/29",
+  "arxiv_id": "2412.20404",
+  "title": "Open-Sora: Democratizing Efficient Video Production for All",
+  "url": "https://arxiv.org/abs/2412.20404",
+  "pdf": "https://arxiv.org/pdf/2412.20404",
+  "venue": "arXiv 预印本",
+  "org": "HPC-AI Tech",
+  "task": [
+   "生成"
+  ],
+  "type": "技术报告",
+  "line": "基座架构",
+  "cites": 786,
+  "upvotes": 1,
+  "why": "786 次引用、39.2 次/月，是 2024 年论文里引用速率第二高的（仅次于 Wan）；完整开源的 Sora 复现路线，训练成本与配方全公开"
+ },
+ {
+  "short": "LTX-Video",
+  "date": "2024/12/30",
+  "arxiv_id": "2501.00103",
+  "title": "LTX-Video: Realtime Video Latent Diffusion",
+  "url": "https://arxiv.org/abs/2501.00103",
+  "pdf": "https://arxiv.org/pdf/2501.00103",
+  "venue": "arXiv 预印本",
+  "org": "Lightricks",
+  "task": [
+   "生成"
+  ],
+  "type": "模型",
+  "line": "基座架构",
+  "cites": 543,
+  "upvotes": 51,
+  "why": "543 次引用（27.1 次/月）、51 upvote；1:192 高压缩 VAE 把生成拉进实时区间，2B 规模是消费级显卡上第一个能跑的开源 DiT 视频模型"
  },
  {
   "short": "Cosmos",
@@ -142,6 +344,96 @@
   "cites": 817,
   "upvotes": 84,
   "why": "把视频生成明确定位成机器人与自动驾驶的数据引擎，开辟 physical AI 应用面"
+ },
+ {
+  "short": "VideoReward",
+  "date": "2025/01/23",
+  "arxiv_id": "2501.13918",
+  "title": "Improving Video Generation with Human Feedback",
+  "url": "https://arxiv.org/abs/2501.13918",
+  "pdf": "https://arxiv.org/pdf/2501.13918",
+  "venue": "NeurIPS（年份未核）",
+  "org": "香港中文大学 MMLab / 清华大学 / 快手 Kling 团队 等 5 家",
+  "task": [
+   "生成"
+  ],
+  "type": "奖励与 RL",
+  "line": "RL 与对齐",
+  "cites": 251,
+  "upvotes": 55,
+  "why": "251 次引用（13.1 次/月）、55 upvote；多维人类偏好数据集 + VideoReward 奖励模型 + 三种 flow 对齐算法，是 DanceGRPO 之后 RL 后训练的奖励侧事实标准"
+ },
+ {
+  "short": "Sparse VideoGen",
+  "date": "2025/02/03",
+  "arxiv_id": "2502.01776",
+  "title": "Sparse VideoGen: Accelerating Video Diffusion Transformers with Spatial-Temporal Sparsity",
+  "url": "https://arxiv.org/abs/2502.01776",
+  "pdf": "https://arxiv.org/pdf/2502.01776",
+  "venue": "ICML（年份未核）",
+  "org": "加州大学伯克利分校 / 麻省理工学院 / 英伟达 等 4 家",
+  "task": [
+   "生成"
+  ],
+  "type": "方法",
+  "line": "推理效率与稀疏注意力",
+  "cites": 200,
+  "upvotes": 3,
+  "why": "200 次引用（10.6 次/月）；把 3D 全注意力头分成空间头与时间头再在线稀疏化，training-free 加速 2 倍以上，是 2025–2026 稀疏注意力加速（含 HunyuanVideo 1.5 的 SSTA）这条线的起点"
+ },
+ {
+  "short": "Señorita-2M",
+  "date": "2025/02/10",
+  "arxiv_id": "2502.06734",
+  "title": "Señorita-2M: A High-Quality Instruction-based Dataset for General Video Editing by Video Specialists",
+  "url": "https://arxiv.org/abs/2502.06734",
+  "pdf": "https://arxiv.org/pdf/2502.06734",
+  "venue": "NeurIPS（年份未核）",
+  "org": "香港中文大学 / 香港理工大学 / 清华大学 等 5 家",
+  "task": [
+   "编辑"
+  ],
+  "type": "数据集",
+  "line": "指令式视频编辑与数据集",
+  "cites": 62,
+  "upvotes": 1,
+  "why": "把编辑数据规模一次拉到 200 万对，用一组编辑专家模型而非通用模型造数据；2025 年之后的指令编辑模型基本都在它或它的后继数据集上训"
+ },
+ {
+  "short": "VideoGrain",
+  "date": "2025/02/24",
+  "arxiv_id": "2502.17258",
+  "title": "VideoGrain: Modulating Space-Time Attention for Multi-grained Video Editing",
+  "url": "https://arxiv.org/abs/2502.17258",
+  "pdf": "https://arxiv.org/pdf/2502.17258",
+  "venue": "ICLR 2025",
+  "org": "悉尼科技大学 / 浙江大学",
+  "task": [
+   "编辑"
+  ],
+  "type": "方法",
+  "line": "训练-free 视频编辑",
+  "cites": 60,
+  "upvotes": 79,
+  "why": "79 upvote 是 2025 年 training-free 编辑里最高的；把编辑粒度显式拆到类别 / 实例 / 部件三级，解决多主体编辑互相污染的问题"
+ },
+ {
+  "short": "VideoPainter",
+  "date": "2025/03/07",
+  "arxiv_id": "2503.05639",
+  "title": "VideoPainter: Any-length Video Inpainting and Editing with Plug-and-Play Context Control",
+  "url": "https://arxiv.org/abs/2503.05639",
+  "pdf": "https://arxiv.org/pdf/2503.05639",
+  "venue": "SIGGRAPH（年份未核）",
+  "org": "香港中文大学 / 腾讯 ARC Lab / 东京大学 等 4 家",
+  "task": [
+   "编辑"
+  ],
+  "type": "方法",
+  "line": "视频修补与物体移除",
+  "cites": 84,
+  "upvotes": 29,
+  "why": "84 次引用（4.7 次/月）、29 upvote；即插即用的上下文编码器接在 DiT 上做任意长度视频修补，把 inpainting 从 UNet 时代搬进 DiT 时代"
  },
  {
   "short": "VACE",
@@ -163,6 +455,25 @@
   "why": "生成与编辑统一进一个模型，是 ComfyUI 生态里被实际接得最多的可控方案"
  },
  {
+  "short": "ReCamMaster",
+  "date": "2025/03/14",
+  "arxiv_id": "2503.11647",
+  "title": "ReCamMaster: Camera-Controlled Generative Rendering from A Single Video",
+  "url": "https://arxiv.org/abs/2503.11647",
+  "pdf": "https://arxiv.org/pdf/2503.11647",
+  "venue": "ICCV 2025",
+  "org": "浙江大学 / 快手可灵团队 / 香港中文大学 等 4 家",
+  "task": [
+   "生成",
+   "编辑"
+  ],
+  "type": "方法",
+  "line": "可控生成与运动控制",
+  "cites": 277,
+  "upvotes": 148,
+  "why": "277 次引用（15.8 次/月）、148 upvote，两轴都在 2025 年前列；给定单段已有视频重打相机轨迹，是「视频重拍」这类相机级编辑的代表"
+ },
+ {
   "short": "Wan",
   "date": "2025/03/26",
   "arxiv_id": "2503.20314",
@@ -181,6 +492,24 @@
   "why": "17 个月 2414 次引用（142 次/月，全表最高）；2026 年绝大多数开源二次开发的底座"
  },
  {
+  "short": "VBench-2.0",
+  "date": "2025/03/27",
+  "arxiv_id": "2503.21755",
+  "title": "VBench-2.0: Advancing Video Generation Benchmark Suite for Intrinsic Faithfulness",
+  "url": "https://arxiv.org/abs/2503.21755",
+  "pdf": "https://arxiv.org/pdf/2503.21755",
+  "venue": "arXiv 预印本",
+  "org": "上海人工智能实验室 / 南洋理工大学 / 中山大学 等 4 家",
+  "task": [
+   "生成"
+  ],
+  "type": "基准",
+  "line": "评测",
+  "cites": 250,
+  "upvotes": 33,
+  "why": "250 次引用（14.6 次/月）；VBench 的直接后继，从表观质量转向内在忠实度（物理常识、常识推理、可控性），2026 年的报告开始双榜同报"
+ },
+ {
   "short": "DanceGRPO",
   "date": "2025/05/12",
   "arxiv_id": "2505.07818",
@@ -188,7 +517,7 @@
   "url": "https://arxiv.org/abs/2505.07818",
   "pdf": "https://arxiv.org/pdf/2505.07818",
   "venue": "arXiv 预印本",
-  "org": "字节跳动 / 香港大学（未核）",
+  "org": "字节跳动 Seed / 香港大学",
   "task": [
    "生成"
   ],
@@ -199,6 +528,42 @@
   "why": "把 GRPO 搬到视觉生成，RL 后训练从此成为视频基座的标配环节"
  },
  {
+  "short": "MAGI-1",
+  "date": "2025/05/19",
+  "arxiv_id": "2505.13211",
+  "title": "MAGI-1: Autoregressive Video Generation at Scale",
+  "url": "https://arxiv.org/abs/2505.13211",
+  "pdf": "https://arxiv.org/pdf/2505.13211",
+  "venue": "arXiv 预印本",
+  "org": "Sand AI",
+  "task": [
+   "生成"
+  ],
+  "type": "技术报告",
+  "line": "基座架构",
+  "cites": 250,
+  "upvotes": 5,
+  "why": "250 次引用（16.2 次/月）；24B、按 chunk 自回归去噪，峰值显存与视频长度无关，是开源阵营里 chunk 级自回归路线最完整的一份报告"
+ },
+ {
+  "short": "MiniMax-Remover",
+  "date": "2025/05/30",
+  "arxiv_id": "2505.24873",
+  "title": "MiniMax-Remover: Taming Bad Noise Helps Video Object Removal",
+  "url": "https://arxiv.org/abs/2505.24873",
+  "pdf": "https://arxiv.org/pdf/2505.24873",
+  "venue": "NeurIPS 2025",
+  "org": "香港中文大学 / 深圳大学 / IntelliFusion Inc. 等 5 家",
+  "task": [
+   "编辑"
+  ],
+  "type": "方法",
+  "line": "视频修补与物体移除",
+  "cites": 41,
+  "upvotes": 4,
+  "why": "两阶段极简架构 + 「坏噪声」分析，6 步就能做视频物体擦除；是 ComfyUI 生态里实际被接得最多的开源 removal 方案"
+ },
+ {
   "short": "Self Forcing",
   "date": "2025/06/09",
   "arxiv_id": "2506.08009",
@@ -206,7 +571,7 @@
   "url": "https://arxiv.org/abs/2506.08009",
   "pdf": "https://arxiv.org/pdf/2506.08009",
   "venue": "NeurIPS 2025 (Spotlight)",
-  "org": "Adobe Research / 德州大学奥斯汀分校（未核）",
+  "org": "Adobe Research / 德克萨斯大学奥斯汀分校",
   "task": [
    "生成"
   ],
@@ -253,6 +618,134 @@
   "why": "用 Veo 3 在 62 个未训练任务上验证零样本能力，提出 chain-of-frames；把视频模型重新定义为通用视觉基座"
  },
  {
+  "short": "EditVerse",
+  "date": "2025/09/24",
+  "arxiv_id": "2509.20360",
+  "title": "EditVerse: Unifying Image and Video Editing and Generation with In-Context Learning",
+  "url": "https://arxiv.org/abs/2509.20360",
+  "pdf": "https://arxiv.org/pdf/2509.20360",
+  "venue": "arXiv 预印本",
+  "org": "Adobe Research / 香港中文大学 / 约翰斯·霍普金斯大学 等 4 家",
+  "task": [
+   "生成",
+   "编辑"
+  ],
+  "type": "方法",
+  "line": "视频编辑与统一创作",
+  "cites": 50,
+  "upvotes": 18,
+  "why": "50 次引用（4.5 次/月）；把文本 / 图像 / 视频统一成一条 token 序列靠自注意力做 in-context 学习，并自建 232K 视频编辑样本补数据缺口"
+ },
+ {
+  "short": "LongLive",
+  "date": "2025/09/26",
+  "arxiv_id": "2509.22622",
+  "title": "LongLive: Real-time Interactive Long Video Generation",
+  "url": "https://arxiv.org/abs/2509.22622",
+  "pdf": "https://arxiv.org/pdf/2509.22622",
+  "venue": "arXiv 预印本",
+  "org": "英伟达 / 香港科技大学（广州） / 香港大学 等 5 家",
+  "task": [
+   "生成"
+  ],
+  "type": "方法",
+  "line": "长视频与实时流式生成",
+  "cites": 211,
+  "upvotes": 190,
+  "why": "211 次引用（19.0 次/月）+ 190 upvote，两轴都是 2025 年下半年最高档；帧级自回归 + 流式换 prompt，把长视频从「离线批量」变成「实时可交互」"
+ },
+ {
+  "short": "Self-Forcing++",
+  "date": "2025/10/02",
+  "arxiv_id": "2510.02283",
+  "title": "Self-Forcing++: Towards Minute-Scale High-Quality Video Generation",
+  "url": "https://arxiv.org/abs/2510.02283",
+  "pdf": "https://arxiv.org/pdf/2510.02283",
+  "venue": "arXiv 预印本",
+  "org": "加州大学洛杉矶分校 / 字节跳动 Seed / 中佛罗里达大学",
+  "task": [
+   "生成"
+  ],
+  "type": "方法",
+  "line": "长视频与实时流式生成",
+  "cites": 167,
+  "upvotes": 98,
+  "why": "167 次引用（15.3 次/月）、98 upvote；不需要长视频教师也不需要长视频数据，把 Self Forcing 从秒级推到分钟级，是 Forcing 家族当前的长时基线"
+ },
+ {
+  "short": "UniVideo",
+  "date": "2025/10/09",
+  "arxiv_id": "2510.08377",
+  "title": "UniVideo: Unified Understanding, Generation, and Editing for Videos",
+  "url": "https://arxiv.org/abs/2510.08377",
+  "pdf": "https://arxiv.org/pdf/2510.08377",
+  "venue": "arXiv 预印本",
+  "org": "滑铁卢大学 / 快手科技 Kling 团队",
+  "task": [
+   "生成",
+   "编辑"
+  ],
+  "type": "模型",
+  "line": "视频编辑与统一创作",
+  "cites": 84,
+  "upvotes": 81,
+  "why": "84 次引用（7.8 次/月）、81 upvote；MLLM 读指令 + MMDiT 出视频的双流设计，把理解、生成、编辑放进一次联合训练，是「视频侧统一模型」目前最完整的一篇"
+ },
+ {
+  "short": "IVEBench",
+  "date": "2025/10/13",
+  "arxiv_id": "2510.11647",
+  "title": "IVEBench: Modern Benchmark Suite for Instruction-Guided Video Editing Assessment",
+  "url": "https://arxiv.org/abs/2510.11647",
+  "pdf": "https://arxiv.org/pdf/2510.11647",
+  "venue": "ICLR 2026",
+  "org": "浙江大学 / 腾讯优图实验室 / 上海交通大学 等 5 家",
+  "task": [
+   "编辑"
+  ],
+  "type": "基准",
+  "line": "评测",
+  "cites": 26,
+  "upvotes": 5,
+  "why": "全库唯一一条视频编辑评测口径；600 段源视频 / 8 类编辑任务 / 三维度指标，补上「编辑好不好没法量」这个空缺"
+ },
+ {
+  "short": "Ditto",
+  "date": "2025/10/17",
+  "arxiv_id": "2510.15742",
+  "title": "Scaling Instruction-Based Video Editing with a High-Quality Synthetic Dataset",
+  "url": "https://arxiv.org/abs/2510.15742",
+  "pdf": "https://arxiv.org/pdf/2510.15742",
+  "venue": "arXiv 预印本",
+  "org": "香港科技大学 / 蚂蚁集团 / 浙江大学 等 4 家",
+  "task": [
+   "编辑"
+  ],
+  "type": "数据集",
+  "line": "指令式视频编辑与数据集",
+  "cites": 71,
+  "upvotes": 52,
+  "why": "71 次引用（6.8 次/月）、52 upvote；图像编辑器 + in-context 视频生成器融合造数据，再用 agent 筛指令，是当前规模最大的合成编辑数据管线"
+ },
+ {
+  "short": "Cosmos-Predict 2.5",
+  "date": "2025/10/28",
+  "arxiv_id": "2511.00062",
+  "title": "World Simulation with Video Foundation Models for Physical AI",
+  "url": "https://arxiv.org/abs/2511.00062",
+  "pdf": "https://arxiv.org/pdf/2511.00062",
+  "venue": "arXiv 预印本",
+  "org": "英伟达",
+  "task": [
+   "生成"
+  ],
+  "type": "技术报告",
+  "line": "世界模型与交互环境",
+  "cites": 170,
+  "upvotes": 47,
+  "why": "170 次引用（16.9 次/月）、47 upvote；Cosmos 的下一代，Text2World / Image2World / Video2World 合一并接入 Cosmos-Reason1 做文本 grounding，2 亿视频片段训练 + RL 后训练"
+ },
+ {
   "short": "HunyuanVideo 1.5",
   "date": "2025/11/24",
   "arxiv_id": "2511.18870",
@@ -290,6 +783,24 @@
   "why": "173 upvote 是 2025 年底最高热度；生成/编辑/推理统一进一个框架，音画原生同步"
  },
  {
+  "short": "Helios",
+  "date": "2026/03/04",
+  "arxiv_id": "2603.04379",
+  "title": "Helios: Real Real-Time Long Video Generation Model",
+  "url": "https://arxiv.org/abs/2603.04379",
+  "pdf": "https://arxiv.org/pdf/2603.04379",
+  "venue": "arXiv 预印本",
+  "org": "北京大学 / 字节跳动（中国） / Canva可画 等 4 家",
+  "task": [
+   "生成"
+  ],
+  "type": "模型",
+  "line": "长视频与实时流式生成",
+  "cites": 42,
+  "upvotes": 190,
+  "why": "190 upvote；14B 在单张 H100 上跑 19.5 FPS 且支持分钟级，且明确不用 self-forcing / KV-cache / 稀疏注意力等既有加速手段，是 2026 年实时长视频的另一条解法"
+ },
+ {
   "short": "Matrix-Game 3.0",
   "date": "2026/04/10",
   "arxiv_id": "2604.08995",
@@ -297,7 +808,7 @@
   "url": "https://arxiv.org/abs/2604.08995",
   "pdf": "https://arxiv.org/pdf/2604.08995",
   "venue": "arXiv 预印本",
-  "org": "昆仑万维 Skywork（未核）",
+  "org": "Skywork AI",
   "task": [
    "生成"
   ],
@@ -326,6 +837,24 @@
   "why": "4 个月 101 次引用（25 次/月，新论文里最快）；Artificial Analysis 视频竞技场第一，全模态条件输入"
  },
  {
+  "short": "LiveEdit",
+  "date": "2026/06/25",
+  "arxiv_id": "2606.26740",
+  "title": "LiveEdit: Towards Real-Time Diffusion-Based Streaming Video Editing",
+  "url": "https://arxiv.org/abs/2606.26740",
+  "pdf": "https://arxiv.org/pdf/2606.26740",
+  "venue": "ECCV 2026",
+  "org": "清华大学 / 香港科技大学",
+  "task": [
+   "编辑"
+  ],
+  "type": "方法",
+  "line": "实时与流式编辑",
+  "cites": 8,
+  "upvotes": 82,
+  "why": "82 upvote；三段式蒸馏把双向编辑模型压成单向流式编辑器，是「流式生成」的方法迁到「流式编辑」的第一批工作"
+ },
+ {
   "short": "VidGen-VL",
   "date": "2026/07/10",
   "arxiv_id": "2607.09024",
@@ -333,7 +862,7 @@
   "url": "https://arxiv.org/abs/2607.09024",
   "pdf": "https://arxiv.org/pdf/2607.09024",
   "venue": "ECCV 2026",
-  "org": "未核",
+  "org": "谷歌DeepMind / 多伦多大学 / 伦敦大学学院 等 5 家",
   "task": [
    "生成"
   ],
@@ -360,5 +889,23 @@
   "cites": null,
   "upvotes": null,
   "why": "33B 稠密单流 omni transformer，H3-VAE 把有效序列长度拉到 4 倍以支撑原生 2K；8-03 开源权重后成为首个登顶 Artificial Analysis 全球视频榜的开源模型，压过全部闭源"
+ },
+ {
+  "short": "JoyAI-Video-Edit",
+  "date": "2026/08/04",
+  "arxiv_id": "2608.03974",
+  "title": "JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion",
+  "url": "https://arxiv.org/abs/2608.03974",
+  "pdf": "https://arxiv.org/pdf/2608.03974",
+  "venue": "arXiv 预印本",
+  "org": "京东 Joy Future Academy",
+  "task": [
+   "编辑"
+  ],
+  "type": "模型",
+  "line": "实时与流式编辑",
+  "cites": 1,
+  "upvotes": 104,
+  "why": "104 upvote 是 2026-08 视频编辑最高热度；16B 自回归扩散，两步生成 + 源锚定 DMD，720p 实时开放式编辑，京东开源"
  }
 ]

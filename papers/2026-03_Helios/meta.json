@@ -1,0 +1,25 @@
+{
+ "short": "Helios",
+ "date": "2026/03/04",
+ "arxiv_id": "2603.04379",
+ "title": "Helios: Real Real-Time Long Video Generation Model",
+ "url": "https://arxiv.org/abs/2603.04379",
+ "venue": "arXiv 预印本",
+ "org": "北京大学 / 字节跳动（中国） / Canva可画 等 4 家",
+ "cn_chars": 3142,
+ "attempts": 1,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 42,
+  "hf_upvotes": 190,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-09-01"
+ },
+ "org_source": "PDF 首页作者块（模型抽取），2026-09-02",
+ "task": [
+  "生成"
+ ],
+ "type": "模型",
+ "line": "长视频与实时流式生成",
+ "batch": "2026-09 扩充（20 → 50）"
+}

@@ -1,0 +1,25 @@
+{
+ "short": "Cosmos-Predict 2.5",
+ "date": "2025/10/28",
+ "arxiv_id": "2511.00062",
+ "title": "World Simulation with Video Foundation Models for Physical AI",
+ "url": "https://arxiv.org/abs/2511.00062",
+ "venue": "arXiv 预印本",
+ "org": "英伟达",
+ "cn_chars": 3573,
+ "attempts": 3,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 170,
+  "hf_upvotes": 47,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-09-01"
+ },
+ "org_source": "PDF 首页作者块（模型抽取），2026-09-02",
+ "task": [
+  "生成"
+ ],
+ "type": "技术报告",
+ "line": "世界模型与交互环境",
+ "batch": "2026-09 扩充（20 → 50）"
+}

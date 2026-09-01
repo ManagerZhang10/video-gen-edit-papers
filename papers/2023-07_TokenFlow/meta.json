@@ -1,0 +1,25 @@
+{
+ "short": "TokenFlow",
+ "date": "2023/07/19",
+ "arxiv_id": "2307.10373",
+ "title": "TokenFlow: Consistent Diffusion Features for Consistent Video Editing",
+ "url": "https://arxiv.org/abs/2307.10373",
+ "venue": "ICLR（年份未核）",
+ "org": "魏茨曼科学研究所",
+ "cn_chars": 3867,
+ "attempts": 1,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 509,
+  "hf_upvotes": 58,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-09-01"
+ },
+ "org_source": "PDF 首页作者块（模型抽取），2026-09-02",
+ "task": [
+  "编辑"
+ ],
+ "type": "方法",
+ "line": "训练-free 视频编辑",
+ "batch": "2026-09 扩充（20 → 50）"
+}

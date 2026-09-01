@@ -1,0 +1,25 @@
+{
+ "short": "MAGI-1",
+ "date": "2025/05/19",
+ "arxiv_id": "2505.13211",
+ "title": "MAGI-1: Autoregressive Video Generation at Scale",
+ "url": "https://arxiv.org/abs/2505.13211",
+ "venue": "arXiv 预印本",
+ "org": "Sand AI",
+ "cn_chars": 3834,
+ "attempts": 2,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 250,
+  "hf_upvotes": 5,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-09-01"
+ },
+ "org_source": "PDF 首页作者块（模型抽取），2026-09-02",
+ "task": [
+  "生成"
+ ],
+ "type": "技术报告",
+ "line": "基座架构",
+ "batch": "2026-09 扩充（20 → 50）"
+}

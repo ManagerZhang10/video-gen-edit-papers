@@ -1,0 +1,25 @@
+{
+ "short": "LTX-Video",
+ "date": "2024/12/30",
+ "arxiv_id": "2501.00103",
+ "title": "LTX-Video: Realtime Video Latent Diffusion",
+ "url": "https://arxiv.org/abs/2501.00103",
+ "venue": "arXiv 预印本",
+ "org": "Lightricks",
+ "cn_chars": 3510,
+ "attempts": 2,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 543,
+  "hf_upvotes": 51,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-09-01"
+ },
+ "org_source": "PDF 首页作者块（模型抽取），2026-09-02",
+ "task": [
+  "生成"
+ ],
+ "type": "模型",
+ "line": "基座架构",
+ "batch": "2026-09 扩充（20 → 50）"
+}

@@ -5,7 +5,7 @@
  "title": "From Slow Bidirectional to Fast Autoregressive Video Diffusion Models",
  "url": "https://arxiv.org/abs/2412.07772",
  "venue": "CVPR 2025",
- "org": "MIT / Adobe Research（未核）",
+ "org": "麻省理工学院 / Adobe",
  "cn_chars": 3893,
  "attempts": 2,
  "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
@@ -19,5 +19,6 @@
   "生成"
  ],
  "type": "方法",
- "line": "少步与因果蒸馏"
+ "line": "少步与因果蒸馏",
+ "org_source": "PDF 首页作者块（模型抽取），2026-09-02"
 }

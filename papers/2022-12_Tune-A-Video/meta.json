@@ -1,0 +1,26 @@
+{
+ "short": "Tune-A-Video",
+ "date": "2022/12/22",
+ "arxiv_id": "2212.11565",
+ "title": "Tune-A-Video: One-Shot Tuning of Image Diffusion Models for Text-to-Video Generation",
+ "url": "https://arxiv.org/abs/2212.11565",
+ "venue": "ICCV 2023",
+ "org": "新加坡国立大学 Show Lab / 腾讯 PCG ARC Lab",
+ "cn_chars": 3120,
+ "attempts": 1,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 1201,
+  "hf_upvotes": 3,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-09-01"
+ },
+ "org_source": "PDF 首页作者块（抽取模型五次返回空，改由人读 _work/txt_Tune-A-Video.txt 开头录入）",
+ "task": [
+  "生成",
+  "编辑"
+ ],
+ "type": "方法",
+ "line": "训练-free 视频编辑",
+ "batch": "2026-09 扩充（20 → 50）"
+}

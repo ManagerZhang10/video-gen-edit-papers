@@ -1,0 +1,25 @@
+{
+ "short": "Self-Forcing++",
+ "date": "2025/10/02",
+ "arxiv_id": "2510.02283",
+ "title": "Self-Forcing++: Towards Minute-Scale High-Quality Video Generation",
+ "url": "https://arxiv.org/abs/2510.02283",
+ "venue": "arXiv 预印本",
+ "org": "加州大学洛杉矶分校 / 字节跳动 Seed / 中佛罗里达大学",
+ "cn_chars": 3728,
+ "attempts": 2,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 167,
+  "hf_upvotes": 98,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-09-01"
+ },
+ "org_source": "PDF 首页作者块（模型抽取），2026-09-02",
+ "task": [
+  "生成"
+ ],
+ "type": "方法",
+ "line": "长视频与实时流式生成",
+ "batch": "2026-09 扩充（20 → 50）"
+}

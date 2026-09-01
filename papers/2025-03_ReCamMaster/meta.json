@@ -1,0 +1,26 @@
+{
+ "short": "ReCamMaster",
+ "date": "2025/03/14",
+ "arxiv_id": "2503.11647",
+ "title": "ReCamMaster: Camera-Controlled Generative Rendering from A Single Video",
+ "url": "https://arxiv.org/abs/2503.11647",
+ "venue": "ICCV 2025",
+ "org": "浙江大学 / 快手可灵团队 / 香港中文大学 等 4 家",
+ "cn_chars": 3669,
+ "attempts": 1,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 277,
+  "hf_upvotes": 148,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-09-01"
+ },
+ "org_source": "PDF 首页作者块（模型抽取），2026-09-02",
+ "task": [
+  "生成",
+  "编辑"
+ ],
+ "type": "方法",
+ "line": "可控生成与运动控制",
+ "batch": "2026-09 扩充（20 → 50）"
+}

@@ -1,0 +1,25 @@
+{
+ "short": "Señorita-2M",
+ "date": "2025/02/10",
+ "arxiv_id": "2502.06734",
+ "title": "Señorita-2M: A High-Quality Instruction-based Dataset for General Video Editing by Video Specialists",
+ "url": "https://arxiv.org/abs/2502.06734",
+ "venue": "NeurIPS（年份未核）",
+ "org": "香港中文大学 / 香港理工大学 / 清华大学 等 5 家",
+ "cn_chars": 3151,
+ "attempts": 2,
+ "note": "DeepSeek V4 Pro 依据 PDF 抽取文字生成，未逐句人工复核",
+ "impact": {
+  "citation_count": 62,
+  "hf_upvotes": 1,
+  "citation_provider": "Semantic Scholar Graph API",
+  "checked_at": "2026-09-01"
+ },
+ "org_source": "PDF 首页作者块（模型抽取），2026-09-02",
+ "task": [
+  "编辑"
+ ],
+ "type": "数据集",
+ "line": "指令式视频编辑与数据集",
+ "batch": "2026-09 扩充（20 → 50）"
+}
